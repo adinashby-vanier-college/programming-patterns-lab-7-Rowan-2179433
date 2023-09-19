@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "kthSmallestSubarraySumTest1",
+      "setup": "gradle clean",
+      "run": "gradle test --tests LabSevenTests.kthSmallestSubarraySumTest1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "kthSmallestSubarraySumTest2",
+      "setup": "",
+      "run": "gradle test --tests LabSevenTests.kthSmallestSubarraySumTest2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "kthSmallestSubarraySumTest3",
+      "setup": "",
+      "run": "gradle test --tests LabSevenTests.kthSmallestSubarraySumTest3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "kthSmallestSubarraySumTest4",
+      "setup": "",
+      "run": "gradle test --tests LabSevenTests.kthSmallestSubarraySumTest4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
