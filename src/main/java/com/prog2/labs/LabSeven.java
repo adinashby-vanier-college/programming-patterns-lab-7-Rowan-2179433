@@ -1,7 +1,7 @@
 package com.prog2.labs;
 
 /**
- * @author adinashby
+ * @author RowanLajoie
  *
  */
 
@@ -20,6 +20,40 @@ public class LabSeven {
 	 */
 
 	public static int kthSmallestSubarraySum(int[] nums, int k) {
-		return 0;
+		int n = nums.length;
+        int left = Integer.MAX_VALUE;
+        int right = 0; 
+        
+        for (int num : nums) {
+            left = Math.min(left, num);
+            right += num;
+        }
+        
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            
+            int count = 0;
+            int sum = 0;
+            
+            for (int i = 0; i < n; i++) {
+                sum += nums[i];
+                
+                while (sum > mid) {
+                    sum -= nums[i - count];
+                    count++;
+                }
+                
+              
+                count += count;
+            }
+            
+            if (count < k) {
+                left = mid + 1; 
+            } else {
+                right = mid; 
+            }
+        }
+        
+        return left; 
 	}
 }
